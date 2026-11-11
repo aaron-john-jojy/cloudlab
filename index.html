@@ -1,10 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Home</title>
+    <title>My Azure Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hello from Flask!</h1>
+
+    <div class="container">
+        <h1>Welcome to My Azure Website</h1>
+
+        <p>This website is hosted using Azure Storage.</p>
+
+        <h2>Cloud Computing</h2>
+
+        <p>
+            Microsoft Azure provides cloud services that allow
+            applications and websites to be hosted on the internet.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "My static website is working successfully!";
+        }
+    </script>
+
 </body>
 </html>
